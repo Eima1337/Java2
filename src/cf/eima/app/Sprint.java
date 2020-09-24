@@ -15,7 +15,7 @@ public class Sprint {
             System.out.println("Enter employee data!" + "\n" + "Example: Name, Surname, BadgeID, Salary");
 
             String employee = sc.nextLine();
-            String fileLine = "\n" + employee;
+            String fileLine = employee + "\n";
             bw.write(fileLine);
             bw.close();
         } catch (IOException e) {
