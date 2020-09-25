@@ -27,9 +27,9 @@ public class Sprint {
 
         try (BufferedReader br = new BufferedReader(new FileReader(file))) {
             while ((line = br.readLine()) != null) {
-                String[] employees = line.split(split);
-                Employee emp1 = new Employee(employees[0], employees[1], Integer.parseInt(employees[2]), Double.parseDouble(employees[3]));
-                System.out.println(emp1.toString());
+                String[] employeeInfo = line.split(split);
+                Employee employee = new Employee(employeeInfo[0], employeeInfo[1], Integer.parseInt(employeeInfo[2]), Double.parseDouble(employeeInfo[3]));
+                System.out.println(employee.toString());
             }
 
         } catch (IOException e) {
